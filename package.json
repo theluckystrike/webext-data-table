@@ -1,0 +1,38 @@
+{
+    "name": "webext-data-table",
+    "version": "0.1.0",
+    "description": "Data table component for Chrome extensions — sortable columns, filtering, pagination, row selection, CSV export, and responsive layout for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "data-table",
+        "table",
+        "sort",
+        "filter",
+        "pagination",
+        "csv",
+        "manifest-v3",
+        "browser-extension",
+        "ui-component"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-data-table.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
